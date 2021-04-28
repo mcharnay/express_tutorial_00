@@ -1,0 +1,96 @@
+//Versión
+node 14.15.3
+exprees 4.17.1
+
+//////////////////////////////EXPRESS//////////////////////////////////////////
+
+Express es el framework mas popular para node. También hay adonisjs, y otros más.
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+Primero se creó un servidor sin express, con node sólo.
+const http
+const server = http.createServer
+En bashm poner node index.js
+Instalar package.json (van las propiedades del proyecto).
+
+npm init -y
+
+También se creó servidor con express.
+después de tener instalado el package.json se puede instlar express
+npm install express
+se comentará el otro servidor con ctrl + alt + a
+==========================================
+
+Creador servidor con express.
+
+1-. Se crea en index
+(
+    para ejecutar= bash > node index.js
+)
+(después se instalará nodemon y se usará en vez del servidor normal.)
+
+//////////NODEMON//////////////////////////////
+Vigila código de js. Cuando haya un cambio en el código, nodemon va a detectarlo y reiniciará el servidor.
+
+instalarlo en proyecto
+
+npm i nodemon --save-dev
+npm i nodemon -D
+Los dos son el mismo comando, sólo más abreviado.
+
+se ven instalado en package.json
+
+Para iniciar servidor con nodemon, ejecutarlo desde el proyecto con bash, se usa npx xq está en el proyecto y 
+globalmente.
+
+npx nodemon index.js
+
+//////RUTAS CON MÉTODOS////////////////////////
+
+POST: es necesario usar postman para probar método post. Para testear tus rutas.
+Se usa postman para probar cada petición.
+para más información, entrar acá:
+https://expressjs.com/es/4x/api.html
+
+/////////////////MIDDLEWARES///////////////
+
+Los midlewares, vienen dentro de express, pero también hay middlewares que se pueden instalarlo
+de otro autor.
+usan la palabra use('nombre_midleware')
+Todos los middlewares van con la palabra use()
+
+//////INSTALACIÓN MORGAN///////
+Morgan es un midleware para logger, que se puede usar dentro de la aplicación, env vez de los propios.
+
+npm i morgan
+
+/////////SETTINGS//////////////
+
+Se setean cosas como nombre de proyecto, puerto del poyecto, etc.
+
+/////////////INSTALACIÓN EJS//////////////////////////
+
+Ejs es un módulo de express.
+Es un motor de plantillas. También hay otro que se llama pug, handlebars.
+
+npm install Ejs
+
+Se setea en settings, no se usa require, sólo se setea en settings.
+
+///////////////////BASE DE DATOS//////////////////////////
+//NO SE INTEGRÓ BD, PERO SE HABLÓ SUPERFICIALMENTE.
+
+Se usan modulos npm
+http://expressjs.com/es/guide/database-integration.html#integración-de-la-base-de-datos
+
+Integración a base de datps.
+
+Tamnbién se puede usar orm, como sequelize y mongoose.
+Los orm, sirven para no hacer consultas directamente, sino, usar sintaxis propia del lenguaje de node.
+
+SEQUELIZE: es un orm de bd sql
+
+MONGOOSE: un orm para no sql , como mongo por ejemeplo.
